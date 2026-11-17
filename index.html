@@ -223,6 +223,16 @@
       .mobile-call{background:var(--navy)}
       .mobile-wa{background:#188A58}
     }
+    .brand img {
+      width: 200px;
+      height: auto;
+    }
+    
+    @media (max-width: 640px) {
+      .brand img {
+        width: 160px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -236,13 +246,7 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#home" aria-label="Heng Aircon home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <path d="M4 7h16M6 11h12M8 15h8M10 19h4"/>
-            <path d="M7 3v2M17 3v2"/>
-          </svg>
-        </span>
-        <span>HENG AIRCON</span>
+        <img src="./heng.webp" alt="Heng Aircon Pte Ltd">
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#services">Services</a>
@@ -276,7 +280,10 @@
           </div>
         </div>
         <div class="hero-visual">
-          <img class="hero-photo" src="https://images.unsplash.com/photo-1631545806609-8f7f5f5f5c6b?auto=format&fit=crop&w=1200&q=85" alt="Modern, comfortable living space with air conditioning">
+          <img class="hero-photo"
+           src="https://www.hengaircon.com/wp-content/uploads/2025/03/s1.jpg"
+           alt="Heng Aircon technician servicing a wall-mounted air conditioner"
+           fetchpriority="high">
           <div class="photo-note">
             <strong><span class="red-dot"></span>Comfort starts with care</strong>
             <small>Servicing, repairs and installation support</small>
